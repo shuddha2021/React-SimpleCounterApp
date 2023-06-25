@@ -2,6 +2,80 @@
 
 This is a simple React counter app that allows you to increment, decrement, and reset a count value. It uses TypeScript, React hooks, and CSS for styling.
 
+## How it works
+
+The app consists of two files: `Counter.tsx` and `App.tsx`.
+
+### Counter.tsx
+
+- This file defines the `Counter` component, which renders a counter app with a number and some buttons
+- The component uses the `useState` hook to create a state variable called `count` and a function called `setCount` to update its value. The initial value of `count` is 0.
+- The component also defines some handler functions for incrementing, decrementing, and resetting the `count` value. These functions call the `setCount` function with different arguments to change the state.
+- The component uses the `useEffect` hook to perform a side effect based on the `count` value. The side effect is logging the `count` value to the console. The second argument of the `useEffect` hook is an array of dependencies, which tells React when to run the effect. In this case, the effect only runs when the `count` value changes.
+- The component returns some JSX elements for rendering the counter app. It uses curly braces to insert JavaScript expressions, such as the `count` variable and the handler functions, into the JSX. It also uses some CSS classes for styling.
+- The component exports itself as a default export.
+
+### App.tsx
+
+- This file defines the `App` component, which renders the main app with a title and the `Counter` component
+- The component imports the `Counter` component from `Counter.tsx` and renders it inside a `<div>` element with a class of `"App"`
+- The component also imports a CSS file for styling
+- The component exports itself as a default export.
+
+## Code tracing
+
+Here is a possible code tracing for the app:
+
+- When the app is loaded, React renders the `App` component, which renders the `<div>` element with a class of `"App"`, the `<h1>` element with the text `"Counter App"`, and the `Counter` component.
+- The `Counter` component calls the `useState` hook with an initial value of 0 and creates a state variable called `count` and a function called `setCount`. It also calls the `useEffect` hook with a function that logs the `count` value to the console and an array of dependencies containing `[count]`.
+- The `Counter` component returns some JSX elements for rendering the counter app. It renders a `<div>` element with a class of `"counter"`, an `<h1>` element with the text `{count}`, and four `<button>` elements with different texts and onClick handlers.
+- The user sees a counter app with a number 0 and four buttons: "+", "-", "Reset", and "Random".
+- The user clicks on the "+" button. This triggers the onClick handler, which calls the `increment` function. The function calls the `setCount` function with an argument of `(count + 1)`. This updates the state variable `count` to 1.
+- React re-renders the `Counter` component with
+the new state value. It also runs
+the effect function again, since
+the dependency array contains `[count]`, which has changed. The effect function logs
+the new count value (1) to
+the console.
+- The user sees
+a counter app with
+a number 1 and four buttons: "+", "-", "Reset", and "Random".
+- The user clicks on
+the "-" button. This triggers
+the onClick handler, which calls
+the `decrement` function. The function calls
+the `setCount` function with an argument of `(count - 1)`. This updates
+the state variable `count`
+to 0.
+- React re-renders
+the `Counter`
+component with
+the new state value. It also runs
+the effect function again, since
+the dependency array contains `[count]`, which has changed. The effect function logs
+the new count value (0) to
+the console.
+- The user sees
+a counter app with
+a number 0 and four buttons: "+", "-", "Reset", and "Random".
+- The user clicks on
+the "Reset" button. This triggers
+the onClick handler, which calls
+the `reset`
+function. The function calls
+the `setCount`
+function with an argument of `(0)`. This updates
+the state variable `count`
+to 0.
+- React re-renders
+the `Counter`
+component with
+the new state value. It also runs
+the effect function again, since
+the dependency array contains `[count]`, which has changed. The effect function logs
+the new count value (0) to
+the console.
+
 
 ## Features
 
