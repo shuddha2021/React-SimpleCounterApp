@@ -1,5 +1,3 @@
-Okay, I can add some additional resources links in the readme and rewrite it. Here is the updated markdown text:
-
 # React Counter App
 
 This is a simple React counter app that allows you to increment, decrement, and reset a count value. It uses TypeScript, React hooks, and CSS for styling.
@@ -12,6 +10,13 @@ This is a simple React counter app that allows you to increment, decrement, and 
 - The - button decrements the count value by one.
 - The Reset button sets the count value to zero.
 - The app logs the current count value to the console whenever it changes.
+
+Main concepts
+This app demonstrates some of the main concepts of React, such as:
+
+State: State is a way of storing and managing data that changes over time in a React component. State can be used to store user input, UI elements, API responses, etc. State can make our components dynamic and interactive. State is local and private to each component, unless we pass it down as props to other components.
+useState hook: To use state in a functional component, we need to import the useState hook from React and use array destructuring to assign names to the state value and the setter function. The initial state value can be any type of data, such as a string, a number, an object, an array, etc. To update the state value, we need to call the setter function with the new value as an argument. The setter function can also accept a function that takes the previous state value as a parameter and returns the new value. Updating the state will trigger a re-render of the component.
+Click events: To handle click events in React with TypeScript, we need to specify the type of the event object and the element that triggers the event using React synthetic events and HTML elements as generic parameters. For example, if we want to handle a click event on a button element, we can use React.MouseEvent<HTMLButtonElement> as the type of the event object. To access the properties of the event object or the element, we need to use dot notation or bracket notation. For example, event.currentTarget.name will give us the name attribute of the button element.
 
 ## How to start the app
 
@@ -26,6 +31,15 @@ To start the app, you need to have Node.js and npm installed on your machine. Th
 
 If you want to learn more about TypeScript, React hooks, or CSS, you can check out these links:
 
-- [TypeScript Tutorial – W3Schools](^7^)
-- [React Hooks Tutorial – useState, useEffect, and How to Create Custom Hooks](^1^)
-- [CSS Tutorial - W3Schools](https://www.w3schools.com/css/default.asp)
+Resources
+If you want to learn more about React, you can check out some of these resources:
+
+[Getting started with React - Learn web development | MDN]
+[React]
+[Learn React | Codecademy]
+[What is a React Developer? - Full Scale]
+[React Hooks cheat sheet: Best practices with examples - LogRocket Blog]
+[Built-in React Hooks – React]
+[react-hooks examples – CodeSandbox]
+[Using the State Hook – React (reactjs.org)]
+[Introducing react.dev – React
