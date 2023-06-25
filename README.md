@@ -41,4 +41,3 @@ If you want to learn more about TypeScript, React hooks, or CSS, you can check o
 - [Built-in React Hooks – React](https://reactjs.org/docs/hooks-reference.html)
 - [react-hooks examples – CodeSandbox](https://codesandbox.io/examples/package/react-hooks)
 - [Using the State Hook – React (reactjs.org)](https://reactjs.org/docs/hooks-state.html)
-- [Introducing react.dev – React](https://reactjs.org/blog/2021/10/26/introducing-react-dev.html)
