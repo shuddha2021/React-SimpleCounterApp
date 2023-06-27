@@ -24,8 +24,6 @@ The app consists of two files: `Counter.tsx` and `App.tsx`.
 
 ## Code tracing
 
-Here is a possible code tracing for the app:
-
 - When the app is loaded, React renders the `App` component, which renders the `<div>` element with a class of `"App"`, the `<h1>` element with the text `"Counter App"`, and the `Counter` component.
 - The `Counter` component calls the `useState` hook with an initial value of 0 and creates a state variable called `count` and a function called `setCount`. It also calls the `useEffect` hook with a function that logs the `count` value to the console and an array of dependencies containing `[count]`.
 - The `Counter` component returns some JSX elements for rendering the counter app. It renders a `<div>` element with a class of `"counter"`, an `<h1>` element with the text `{count}`, and four `<button>` elements with different texts and onClick handlers.
